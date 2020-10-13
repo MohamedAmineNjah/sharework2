@@ -1,0 +1,22 @@
+entity Companies {
+  sourceid Integer required,
+sourcename String required,
+name String required,
+website String,
+email String,
+phone String,
+address String,
+postalcode String,
+city String,
+country String
+}
+entity Matches {
+  leftcompanyid Integer required,
+rightcompanyid Integer required
+}
+relationship OneToMany {
+  Companies{leftcompany} to Matches{left}
+}
+relationship OneToMany {
+  Companies{rightcompany} to Matches{right}
+}

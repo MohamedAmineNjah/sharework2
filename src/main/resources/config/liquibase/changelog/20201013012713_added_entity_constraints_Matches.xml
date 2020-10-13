@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Matches.
+    -->
+    <changeSet id="20201013012713-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="left_id"
+                                 baseTableName="matches"
+                                 constraintName="fk_matches_left_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="companies"/>
+
+        <addForeignKeyConstraint baseColumnNames="right_id"
+                                 baseTableName="matches"
+                                 constraintName="fk_matches_right_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="companies"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,25 @@
+{
+  "sharework2App": {
+    "matches": {
+      "home": {
+        "title": "Matches",
+        "createLabel": "Create a new Matches",
+        "createOrEditLabel": "Create or edit a Matches",
+        "notFound": "No Matches found"
+      },
+      "created": "A new Matches is created with identifier {{ param }}",
+      "updated": "A Matches is updated with identifier {{ param }}",
+      "deleted": "A Matches is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Matches {{ id }}?"
+      },
+      "detail": {
+        "title": "Matches"
+      },
+      "leftcompanyid": "Leftcompanyid",
+      "rightcompanyid": "Rightcompanyid",
+      "left": "Left",
+      "right": "Right"
+    }
+  }
+}

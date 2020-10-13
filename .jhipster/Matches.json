@@ -1,0 +1,46 @@
+{
+  "name": "Matches",
+  "fields": [
+    {
+      "fieldName": "leftcompanyid",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "rightcompanyid",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "companies",
+      "otherEntityRelationshipName": "leftcompany",
+      "relationshipName": "left",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "companies",
+      "otherEntityRelationshipName": "rightcompany",
+      "relationshipName": "right",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201013012713",
+  "entityTableName": "matches",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany.myapp</groupId>
@@ -622,10 +621,10 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.postgresql.Driver</driver>
-                        <url>jdbc:postgresql://localhost:5432/sharework2</url>
+                        <url>jdbc:postgresql://localhost:5433/sharework</url>
                         <defaultSchemaName></defaultSchemaName>
-                        <username>sharework2</username>
-                        <password></password>
+                        <username>sharework</username>
+                        <password>amine</password>
                         <referenceUrl>hibernate:spring:com.mycompany.myapp.domain?dialect=io.github.jhipster.domain.util.FixedPostgreSQL10Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
@@ -858,8 +857,7 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <dependencies>
-            </dependencies>
+            <dependencies></dependencies>
             <build>
                 <plugins>
                     <plugin>
@@ -1091,7 +1089,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                         <pluginExecution>
@@ -1105,7 +1103,7 @@
                                                 </goals>
                                             </pluginExecutionFilter>
                                             <action>
-                                                <ignore/>
+                                                <ignore />
                                             </action>
                                         </pluginExecution>
                                     </pluginExecutions>

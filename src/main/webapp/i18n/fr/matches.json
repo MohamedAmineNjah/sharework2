@@ -1,0 +1,25 @@
+{
+  "sharework2App": {
+    "matches": {
+      "home": {
+        "title": "Matches",
+        "createLabel": "Créer un nouveau Matches",
+        "createOrEditLabel": "Créer ou éditer un Matches",
+        "notFound": "Aucun Matches trouvé"
+      },
+      "created": "Un nouveau Matches a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Matches avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Matches avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Matches {{ id }} ?"
+      },
+      "detail": {
+        "title": "Matches"
+      },
+      "leftcompanyid": "Leftcompanyid",
+      "rightcompanyid": "Rightcompanyid",
+      "left": "Left",
+      "right": "Right"
+    }
+  }
+}
